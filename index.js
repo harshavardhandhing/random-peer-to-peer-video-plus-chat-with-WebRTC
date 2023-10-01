@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
     });
 });
 
-async function execute1() { //asynchronous function syntax copied from stackoverflow
+async function make_pair_and_connect() { //asynchronous function syntax copied from stackoverflow
     //while true check the clients array for clients and randomly create pairs 
     while (true) {
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -66,4 +66,4 @@ async function execute1() { //asynchronous function syntax copied from stackover
   }
 }
 
-execute1();
+make_pair_and_connect();
